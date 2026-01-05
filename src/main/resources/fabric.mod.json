@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "videoplayer",
+	"version": "${version}",
+	"name": "Video Player PiP",
+	"description": "Picture-in-Picture video player for Minecraft",
+	"authors": [
+		"Your Name"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/videoplayer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.videoplayer.VideoPlayerMod"
+		]
+	},
+	"mixins": [
+		"videoplayer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
